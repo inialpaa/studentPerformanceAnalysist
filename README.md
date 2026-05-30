@@ -24,7 +24,7 @@ Sebelum masuk ke tahap analisis, data mentah dibersihkan terlebih dahulu menggun
 1. **Standardisasi Missing Value:** Mengubah string kosong atau teks `'NaN'` menjadi `NULL`.
 2. **Penghapusan Baris Tanpa Target Variable:** Menghapus baris yang memiliki nilai `FinalGrade` kosong (`NULL`), karena baris tanpa nilai akhir tidak dapat digunakan untuk analisis pengaruh/kausalitas.
 3. **Pembersihan Data Anomali:** Menetralkan data tidak logis seperti jam belajar bernilai negatif (`< 0`) dan tingkat kehadiran di atas 100% agar tidak merusak metrik statistik.
-4. **Filter Demografi:** Mengabaikan data dengan gender `Unknown` untuk menjaga fokus pada esensi pertanyaan bisnis.
+4. **Pembersihan Data Demografi:** Menghapus seluruh baris dengan gender `Unknown` untuk memastikan analisis demografi terfokus sepenuhnya pada kategori yang valid dan bernilai informasi (Male & Female).
 
 *Skrip pembersihan lengkap dapat dilihat pada file `sql/1_data_cleaning.sql`.*
 
