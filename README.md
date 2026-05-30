@@ -13,9 +13,9 @@ Tujuan utama dari proyek ini adalah memberikan rekomendasi berbasis data kepada 
 ---
 
 ## 💾 Dataset Used
-Dataset yang digunakan dalam proyek ini berisi informasi mengenai performa akademik siswa beserta berbagai faktor pendukungnya. Dataset mentah dapat diakses atau diunduh melalui tautan berikut:
+Dataset yang digunakan dalam proyek ini diambil dari Kaggle.
 
-🔗 **[Klik di Sini untuk Mengakses Dataset](https://www.kaggle.com/datasets/haseebindata/student-performance-predictions)**
+🔗 **[Dataset From Kaggle](https://www.kaggle.com/datasets/haseebindata/student-performance-predictions)**
 
 ---
 
