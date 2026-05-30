@@ -47,18 +47,6 @@ WHERE AttendanceRate IS NOT NULL
 GROUP BY 1
 ORDER BY Kategori_Kehadiran;
 
--- Pengaruh Dukungan Orang Tua Terhadap Nilai Akhir Siswa
--- Seberapa besar peran dukungan orang tua dalam mendongkrak pencapaian akademik anak?
-
-SELECT 
-    ParentalSupport,
-    COUNT(*) AS Total_Siswa,
-    ROUND(AVG(FinalGrade), 2) AS Rata_Rata_Nilai
-FROM student_analysist sa 
-WHERE ParentalSupport IS NOT NULL AND ParentalSupport != 'Unknown'
-GROUP BY ParentalSupport
-ORDER BY Rata_Rata_Nilai DESC;
-
 -- Segmentasi Siswa Di Luar Jam Sekolah
 -- "Apakah siswa yang terlalu banyak mengambil kegiatan (Ekskul + Kelas Online) justru kelelahan (burnout) sehingga nilainya turun? Atau justru mereka yang paling berprestasi karena pandai mengatur waktu?"
 
@@ -78,3 +66,15 @@ WHERE `Online Classes Taken` IS NOT NULL
   AND `Online Classes Taken` != ''
 GROUP BY 1
 ORDER BY Rata_Rata_Nilai_Akhir DESC;
+
+-- Pengaruh Dukungan Orang Tua Terhadap Nilai Akhir Siswa
+-- Seberapa besar peran dukungan orang tua dalam mendongkrak pencapaian akademik anak?
+
+SELECT 
+    ParentalSupport,
+    COUNT(*) AS Total_Siswa,
+    ROUND(AVG(FinalGrade), 2) AS Rata_Rata_Nilai
+FROM student_analysist sa 
+WHERE ParentalSupport IS NOT NULL AND ParentalSupport != 'Unknown'
+GROUP BY ParentalSupport
+ORDER BY Rata_Rata_Nilai DESC;
