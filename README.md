@@ -1,9 +1,7 @@
 # 📊 Student Performance Analysis (SQL Case Study)
 
 ## 📌 Project Overview
-Proyek ini berfokus pada **Exploratory Data Analysis (EDA)** untuk mengidentifikasi faktor-faktor yang memengaruhi performa akademik siswa. Analisis dilakukan menggunakan dataset performa siswa dengan membedah aspek demografi (gender), manajemen waktu luar sekolah, tingkat kehadiran, serta faktor eksternal seperti dukungan orang tua. 
-
-Tujuan utama dari proyek ini adalah memberikan rekomendasi berbasis data kepada institusi pendidikan dalam memahami perilaku siswa dan mengoptimalkan hasil belajar mereka.
+Proyek ini berfokus pada **Exploratory Data Analysis (EDA)** untuk mengidentifikasi faktor-faktor yang memengaruhi performa akademik siswa. Analisis dilakukan menggunakan dataset performa siswa dengan membedah aspek demografi (gender), manajemen waktu luar sekolah, tingkat kehadiran, serta faktor eksternal seperti dukungan orang tua.
 
 ## 🛠️ Tech Stack & Tools
 - **Database:** MySQL (Data Cleaning & Exploratory Data Analysis)
