@@ -3,6 +3,8 @@
 ## 📌 Project Overview
 Proyek ini berfokus pada **Exploratory Data Analysis (EDA)** untuk mengidentifikasi faktor-faktor yang memengaruhi performa akademik siswa. Analisis dilakukan menggunakan dataset performa siswa dengan membedah aspek demografi (gender), manajemen waktu luar sekolah, tingkat kehadiran, serta faktor eksternal seperti dukungan orang tua.
 
+---
+
 ## 🛠️ Tech Stack & Tools
 - **Database:** MySQL (Data Cleaning & Exploratory Data Analysis)
 - **Visualization:** PowerBI *(Work in Progress)*
@@ -110,7 +112,5 @@ Kondisi ini mengindikasikan dua kemungkinan realita:
 
 ## 📊 PowerBI Dashboard
 *(Work in Progress)*
-Dashboard interaktif sedang dikembangkan di PowerBI Desktop untuk memvisualisasikan matriks segmentasi siswa dan mempermudah pemangku kebijakan sekolah melakukan filter data secara *real-time*.
 
 ---
-*Proyek ini dikembangkan secara mandiri untuk kebutuhan portofolio data analytics.*
