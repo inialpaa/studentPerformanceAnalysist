@@ -7,7 +7,7 @@ Proyek ini berfokus pada **Exploratory Data Analysis (EDA)** untuk mengidentifik
 
 ## 🛠️ Tech Stack & Tools
 - **Database:** MySQL (Data Cleaning & Exploratory Data Analysis)
-- **Visualization:** PowerBI *(Work in Progress)*
+- **Visualization:** Google Looker Studio *(Work in Progress)*
 - **Documentation:** Markdown
 
 ---
@@ -55,7 +55,7 @@ Analisis pada bagian ini bertujuan untuk mengukur sejauh mana komitmen waktu bel
 | :--- | :---: | :---: |
 | 1. Rendah (<10 jam/minggu) | 126 | 79.10 |
 | 2. Sedang (10-20 jam/minggu) | 779 | 79.88 |
-| 3. Tinggi (>20 jam/minggu) | 382 | **80.99** |
+| 3. Tinggi (>20 jam/minggu) | 340 | **81.02** |
 
 #### B. Distribusi Berdasarkan Kategori Kehadiran Sekolah (`AttendanceRate`)
 **Output Data:**
@@ -66,7 +66,7 @@ Analisis pada bagian ini bertujuan untuk mengukur sejauh mana komitmen waktu bel
 | 3. Baik (>=90%) | 503 | 80.02 |
 
 **Insight:**
-- **Jam Belajar:** Menunjukkan korelasi linear positif yang jelas. Semakin tinggi durasi belajar mandiri siswa per minggu, semakin meningkat pula nilai akhir mereka, di mana kelompok jam belajar tinggi memuncaki nilai rata-rata (**80.99**).
+- **Jam Belajar:** Menunjukkan korelasi linear positif yang jelas. Semakin tinggi durasi belajar mandiri siswa per minggu, semakin meningkat pula nilai akhir mereka, di mana kelompok jam belajar tinggi memuncaki nilai rata-rata (**81.02**).
 - **Kehadiran:** Menunjukkan efek *plateau* yang menarik. Siswa dengan kehadiran **Cukup (75-89%)** meraih rata-rata nilai tertinggi (**80.14**), sedikit mengungguli kelompok kehadiran **Baik (80.02)**. Hal ini menandakan bahwa setelah melewati ambang batas kehadiran minimum (75%), faktor kehadiran fisik di kelas tidak lagi mendominasi peningkatan nilai secara signifikan jika tidak diimbangi oleh efektivitas belajar mandiri.
 
 ---
@@ -110,7 +110,7 @@ Kondisi ini mengindikasikan dua kemungkinan realita:
 
 ---
 
-## 📊 PowerBI Dashboard
+## 📊 Google Looker Studio Dashboard
 *(Work in Progress)*
 
 ---
