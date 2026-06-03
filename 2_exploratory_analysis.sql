@@ -28,6 +28,7 @@ SELECT
     COUNT(*) AS Total_Siswa,
     ROUND(AVG(FinalGrade), 2) AS Rata_Rata_Nilai
 FROM student_analysist sa
+WHERE StudyHoursPerWeek IS NOT NULL AND StudyHoursPerWeek != ''
 GROUP BY 1
 ORDER BY Kategori_Jam_Belajar;
 
@@ -43,7 +44,7 @@ SELECT
     COUNT(*) AS Total_Siswa,
     ROUND(AVG(FinalGrade), 2) AS Rata_Rata_Nilai
 FROM student_analysist sa 
-WHERE AttendanceRate IS NOT NULL
+WHERE AttendanceRate IS NOT NULL AND AttendanceRate != ''
 GROUP BY 1
 ORDER BY Kategori_Kehadiran;
 
@@ -62,8 +63,7 @@ SELECT
     ROUND(AVG(StudyHoursPerWeek), 2) AS Rata_Rata_Jam_Belajar_Per_Minggu,
     ROUND(AVG(AttendanceRate), 2) AS Rata_Rata_Kehadiran_Sekolah
 FROM student_analysist sa 
-WHERE `Online Classes Taken` IS NOT NULL 
-  AND `Online Classes Taken` != ''
+WHERE `Online Classes Taken` IS NOT NULL AND `Online Classes Taken` != ''
 GROUP BY 1
 ORDER BY Rata_Rata_Nilai_Akhir DESC;
 
