@@ -18,7 +18,7 @@ SELECT
     SUM(CASE WHEN Name IS NULL THEN 1 ELSE 0 END) AS missing_name,
     SUM(CASE WHEN AttendanceRate IS NULL THEN 1 ELSE 0 END) AS missing_attendance_rate,
     SUM(CASE WHEN ParentalSupport IS NULL THEN 1 ELSE 0 END) AS missing_parental,
-    SUM(CASE WHEN FinalGrade IS NULL THEN 1 ELSE 0 END) AS missing_final_grade
+    SUM(CASE WHEN FinalGrade IS NULL THEN 1 ELSE 0 END) AS missing_final_grade,
 FROM student_analysist sa;
 
 DELETE FROM student_analysist
@@ -39,3 +39,7 @@ WHERE FinalGrade IS NULL OR FinalGrade = '';
 
 DELETE FROM student_analysist 
 WHERE Gender = 'Unknown';
+
+SELECT
+	*
+FROM student_analysist sa;
